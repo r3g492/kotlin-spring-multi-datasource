@@ -1,0 +1,23 @@
+
+
+
+# db1 postgres
+postgres-db:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      connection-test-query=SELECT 1
+
+# db2 mongo
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      username: root
+      password: root
+      database: COMMUNITY
+      authentication-database: admin
